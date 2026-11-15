@@ -1,4 +1,4 @@
- 
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
@@ -10,7 +10,7 @@ import { StudentProvider } from "./context/StudentContext";
 function App() {
   return (
     <StudentProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/favourite-students">
         <Navbar />
 
         <Routes>
@@ -21,7 +21,6 @@ function App() {
             element={<FavouriteStudents />}
           />
         </Routes>
-
       </BrowserRouter>
     </StudentProvider>
   );

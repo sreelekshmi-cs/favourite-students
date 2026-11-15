@@ -3,10 +3,30 @@ import { useContext } from "react";
 import { StudentContext } from "../context/StudentContext";
 
 const students = [
-  { id: 1, name: "Zreeh", roll: 101, image: "/images/Zreeh.jpg" },
-  { id: 2, name: "Akhil", roll: 102, image: "/images/Akhil.jpg" },
-  { id: 3, name: "Thasni", roll: 103, image: "/images/Thasni.jpg" },
-  { id: 4, name: "Amina", roll: 104, image: "/images/Amina.jpg" },
+  {
+    id: 1,
+    name: "Akhil",
+    roll: 101,
+    image: `${import.meta.env.BASE_URL}images/Akhil.jpg`
+  },
+  {
+    id: 2,
+    name: "Amina",
+    roll: 102,
+    image: `${import.meta.env.BASE_URL}images/Amina.jpg`
+  },
+  {
+    id: 3,
+    name: "Thasni",
+    roll: 103,
+    image: `${import.meta.env.BASE_URL}images/Thasni.jpg`
+  },
+  {
+    id: 4,
+    name: "Zreeh",
+    roll: 104,
+    image: `${import.meta.env.BASE_URL}images/Zreeh.jpg`
+  }
 ];
 
 function StudentList() {
@@ -42,4 +62,3 @@ function StudentList() {
 }
 
 export default StudentList;
-
